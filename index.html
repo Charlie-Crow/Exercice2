@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Exercice</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script src="menu.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+        crossorigin="anonymous">
+
+    <script>
+        $(document).ready(function () {
+            $('.slider').bxSlider();
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('.image1').on('click', function () {
+                $(this).toggleClass('clic-image');
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <div id="page">
+        <header class="flex">
+            <div id="logo">
+                <img src="images/logo-poker-face.png" alt="logo">
+            </div>
+
+            <!-- MENU -->
+
+            <span>
+                <a href="#" class="icone-menu">
+                    <i class="fas fa-bars"></i>
+                </a>
+                <a href="#" class="icone-fermer">
+                    <i class="fas fa-times"></i>
+                </a>
+            </span>
+
+            <nav class="menu">
+                <ul class="site-nav">
+                    <li>
+                        <a href="#">Homeless</a>
+                    </li>
+                    <li>
+                        <a href="#">Oldest News</a>
+                    </li>
+                    <li>
+                        <a href="#">Secrets</a>
+                    </li>
+                    <li>
+                        <a href="#">Download Malware</a>
+                    </li>
+                    <li>
+                        <a href="#">Don't contact us</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- SLIDER -->
+
+        <div class="slider">
+            <div>
+                <img src="images/slider1.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/slider2.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/slider3.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/slider4.jpg" alt="">
+            </div>
+        </div>
+
+        <div>
+            <div class="fixes">
+                <div class="image1">
+                    <img src="https://picsum.photos/580/600" alt="">
+                </div>
+                <div>
+                    <img src="https://picsum.photos/580/600" alt="">
+                </div>
+            </div>
+            <div class="fixes">
+                <div>
+                    <img src="https://picsum.photos/380/400" alt="">
+                </div>
+                <div>
+                    <img src="https://picsum.photos/380/400" alt="">
+                </div>
+                <div>
+                    <img src="https://picsum.photos/380/400" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
